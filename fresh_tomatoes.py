@@ -122,10 +122,11 @@ main_page_content = '''
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <img src="{poster_image_url}" width="220" height="342">
-    <h2>{movie_title}</h2>
+    <h4><b>{movie_title}</b></h4>
     <h5>{storyline}</h5>
     <h5>Rated: <b>{movie_rating}</b></h5>
     <h6>Lead actor: <a href={actor_facebook_link}>{actor_name}</a>; Release on: {release_date}</h6>
+    <h6>Runtime: {runtime}</h6>
 </div>
 '''
 
@@ -147,7 +148,8 @@ def create_movie_tiles_content(movies):
             actor_name=movie.actor_name,
             release_date=movie.release_date,
             movie_rating=movie.rating,
-            actor_facebook_link=movie.actor_facebook
+            actor_facebook_link=movie.actor_facebook,
+            runtime = movie.runtime
         )
     return content
 

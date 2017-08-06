@@ -10,8 +10,9 @@ hunger_games2015 = media.Movie("Hunger Games: Mockingjay Part 2",
                         "https://www.youtube.com/watch?v=3zVaD7t39w8",
                         "Jennifer Lawrence",
                         "November 16, 2015",
-                        "PG-13",
-                        "https://www.facebook.com/JenniferLawrence")
+                        "PG-13", # we can also use media.Movie.VALID_RATINGS[2], to prevent mis-spelling
+                        "https://www.facebook.com/JenniferLawrence",
+                        "2 hrs. 17 min.")
 
 # print(hunger_games2015.storyline)
 
@@ -23,7 +24,8 @@ cinderella_2015 = media.Movie("Cinderella 2015",
                     "Lily James",
                     "March 6, 2015",
                     "PG",
-                    "https://www.facebook.com/LilyJamesOfficialSite/")
+                    "https://www.facebook.com/LilyJamesOfficialSite/",
+                    "1 hrs. 54 min.")
 
 # print(cinderella_2015.storyline)
 # cinderella_2015.show_trailer()	
@@ -36,12 +38,14 @@ taken_3 = media.Movie("Taken 3 (2015)",
                     "Liam Neeson",
                     "January 9, 2015",
                     "PG-13",
-                    "https://www.facebook.com/liamnessonusa/")
+                    "https://www.facebook.com/liamnessonusa/",
+                    "1 hrs. 49 min.")
 
 
 #show the movie page with all three movies		
 movies=[hunger_games2015, cinderella_2015,taken_3]
 fresh_tomatoes.open_movies_page(movies)
+#below were different tests for calling functions in the Movie class that I did earlier so to use commenting to preservie
 # print(media.Movie.VALID_RATINGS)
 # print(media.Movie.__doc__)
 # print(media.Movie.__name__)
