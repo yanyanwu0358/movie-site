@@ -10,9 +10,20 @@ II. 	ANY REQUIREMENTS TO RUN THE CODE
 III.	STEPS FOR RUNNING THE APPLICATION
 IV.	TECHNICAL SUPPORT
 
-1. the main python file is entertainment_center.py
+I. 	HOW TO GET CODE
+You can dowload it from github: https://github.com/yanyanwu0358/movie-site
 
-2. run entertainment_center.py will generate the fresh_tomatoes.html page
+II. 	ANY REQUIREMENTS TO RUN THE CODE
+1. Install Python from https://www.python.org/
 
-3. then open the fresh_tomatoes.html page you will see the the webpage with movies
-4. prefer to open the fresh_tomatoes.html using Chrome
+III.	STEPS FOR RUNNING THE APPLICATION
+1. The main python application file is entertainment_center.py; 
+The supportig files are: media.py, fresh_tomatoes.py
+
+2. Run entertainment_center.py using Python IDLE or Python command line. This will generate the fresh_tomatoes.html page
+
+3. Open the fresh_tomatoes.html page, you will see the the webpage with movies (title, poster, traier, ratings, facebook link to the leading actor).
+Please note that we prefer to open the fresh_tomatoes.html using Chrome
+
+IV.	TECHNICAL SUPPORT
+For any questions, please contact yanyanwu@att.net
